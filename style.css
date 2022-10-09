@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -24,6 +27,17 @@ body {
   background-color: rgba(47, 79, 79, 0.918);
 }
 
+.hireMeBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px 12px;
+  background-color: rgb(217, 121, 52);
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
 h1,
 h2,
 h3 {
@@ -31,12 +45,12 @@ h3 {
     "Lucida Sans", Arial, sans-serif;
 }
 
-h1 {
+.title {
   font-size: 45px;
 }
 
-.subtitle {
-  _border: 2px solid rgb(217, 121, 52);
+.profession::after {
+  content: "🔥";
 }
 
 article {
@@ -50,6 +64,11 @@ article {
 
 h2 {
   font-size: 32px;
+}
+
+.first-experience,
+.first-experience-timespan {
+  display: inline;
 }
 
 section {
